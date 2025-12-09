@@ -10,7 +10,8 @@ MODULE.bazel.lock
 /*/CMakeUserPresets.json
 
 # Nested build directory
-/build*
+/build-*
+/build/
 
 # External libraries (like source for llvm)
 /externals/*
