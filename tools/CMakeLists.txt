@@ -5,8 +5,12 @@ set (LIBS
     ${dialect_libs}
     ${conversion_libs}
     MLIROptLib
+    
+    # Comment out following two lines if MLIRRegisterAll<x> is not found when
+    # build_test.sh
     MLIRRegisterAllDialects
     MLIRRegisterAllPasses
+
     MLIRZKLean
     MLIRZKLeanConversion
     # ortools::ortools
