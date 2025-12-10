@@ -19,9 +19,11 @@ set (ZKLEAN_TEST_DEPENDS
 add_lit_testsuite(check-mlir-tutorial "Running the MLIR tutorial regression tests"
     ${CMAKE_CURRENT_BINARY_DIR}
     DEPENDS ${MLIR_TUTORIAL_TEST_DEPENDS}
+    ARGS -j 1
 )
 
 add_lit_testsuite(check-zklean-opt "Running the ZKLean tests"
     ${CMAKE_CURRENT_BINARY_DIR}
     DEPENDS ${ZKLEAN_TEST_DEPENDS}
+    ARGS -j 1
 )
