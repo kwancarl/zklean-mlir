@@ -8,6 +8,7 @@ set (LIBS
     MLIRRegisterAllDialects
     MLIRRegisterAllPasses
     MLIRZKLean
+    MLIRZKLeanConversion
     # ortools::ortools
 )
 
