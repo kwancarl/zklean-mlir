@@ -13,7 +13,8 @@ set (LIBS
 
     MLIRZKLean
     MLIRZKLeanConversion
-    # ortools::ortools
+
+    MLIRZKExpr
 )
 
 add_llvm_executable(zklean-opt zklean-opt.cpp)
