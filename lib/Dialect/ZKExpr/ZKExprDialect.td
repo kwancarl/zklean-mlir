@@ -4,7 +4,7 @@
 include "mlir/IR/OpBase.td"
 
 def ZKExpr_Dialect : Dialect {
-  let name = "zkexpr";
+  let name = "ZKExpr";
   let summary = "A dialect for zkexpr";
   let description = [{
     The zkexpr dialect defines types and operations for 
