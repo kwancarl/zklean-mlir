@@ -21,6 +21,7 @@ include(AddMLIR)
 include_directories(${LLVM_INCLUDE_DIRS})
 include_directories(${MLIR_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR})
+# Modify below as necessary to point to location of llvm-project
 include_directories(${PROJECT_SOURCE_DIR}/externals/llvm-project)
 include_directories(${PROJECT_BINARY_DIR})
 

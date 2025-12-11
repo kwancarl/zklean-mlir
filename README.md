@@ -22,11 +22,12 @@ bash build_deps.sh
 bash build_test.sh
 ```
 
-The first command will build MLIR, assuming the LLVM project source is placed in
-`zklean-mlir/externals/`. The second command will build `zklean-opt` and run
-tests. Please inspect and modify `build_deps.sh` and `build_test.sh`,
-respectively, as needed.  These commands have succeeded on x86 machines running
-Debian and NixOS.
+The first command will build MLIR, assuming the LLVM project source is placed
+in `zklean-mlir/externals/`. The second command will build `zklean-opt` and run
+tests. These commands have succeeded on x86 machines running Debian and NixOS.
+Please inspect `build_deps.sh`, `build_test.sh`, and `CMakeLists.txt` and
+modify to point to your `llvm-project/` directory (or as needed).
+
 
 ## Warning 
 Work in progress
