@@ -1,7 +1,8 @@
 #ifndef LIB_DIALECT_ZKEXPR_ZKEXPRTYPES_TD_
 #define LIB_DIALECT_ZKEXPR_ZKEXPRTYPES_TD_
 
-include "ZKExprDialect.td"
+// Path hack to get ZKExpr types included into ZKBuilder
+include "../ZKExpr/ZKExprDialect.td"
 include "mlir/IR/AttrTypeBase.td"
 
 // TODO: Consider if all types need to be paramerterized by field f like in

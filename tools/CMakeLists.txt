@@ -15,6 +15,7 @@ set (LIBS
     MLIRZKLeanConversion
 
     MLIRZKExpr
+    MLIRZKBuilder
 )
 
 add_llvm_executable(zklean-opt zklean-opt.cpp)

@@ -1,0 +1,4 @@
+TODO: Clean up includes, some ZKBuilder Ops take as inputs ZKExpr so includes
+for various ZKExpr sources are scattered throughout this directory, should
+clean them up to only include the minimal ZKExpr files and figure out if this
+is best practice
