@@ -4,11 +4,11 @@
 include "mlir/IR/OpBase.td"
 
 def ZKBuilder_Dialect : Dialect {
-  let name = "zkbuilder";
+  let name = "ZKBuilder";
   let summary = "A dialect for zkbuilder";
   let description = [{
     The zkbuilder dialect defines types and operations for 
-    ZK Builderessions and ZK Builders.
+    ZK Builders.
   }];
 
   let cppNamespace = "::mlir::zkbuilder";

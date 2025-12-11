@@ -7,15 +7,18 @@ module {
                             %arg1 : !ZKExpr.zkexpr,
                             %arg2 : !ZKExpr.zkexpr
                            ) {
+
     %1 = ZKExpr.Add %arg0 %arg0
     %2 = ZKExpr.Sub %1 %arg0
     %3 = ZKExpr.Mul %2 %1
 
-    // TODO: Figure out how to do add checks properly
+    // TODO: Figure out how to add checks properly
+
     // CHECK: zkbuilder.ConstrainEq
-    %4 = zkbuilder.ConstrainEq %2 %1
+    %4 = ZKBuilder.ConstrainEq %2 %1
+
     // CHECK: zkbuilder.ConstrainR1CS
-    %5 = zkbuilder.ConstrainR1CS %3 %2 %1
+    %5 = ZKBuilder.ConstrainR1CS %3 %2 %1
 
     return
   }
